@@ -1,0 +1,125 @@
+.conf-wrapper {
+    margin-top: 3rem;
+    .conf-container {
+        border: 1px solid rgb(110, 74, 113);
+        border-radius: 8px;
+        box-shadow: 5px 5px 20px 2px #B3B3B3;
+        width: 30%;
+        height: 43rem;
+        .see-more {
+            background-color: rgba(49, 50, 71);
+            display: block;
+            color: white;
+            width: fit-content;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+                background-color: rgb(20, 20, 29);
+            }
+        }
+
+    }
+}
+.form-bg {
+    background: url(../images/bg.jpg) no-repeat center;
+    height: calc(100vh - 88px);
+    max-height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    padding-top: 10rem;
+    .login-form {
+        background-color: rgba(49, 50, 71, 0.4);
+        width: fit-content;
+        padding: 3rem;
+        border-radius: 10px;
+        input {
+            width: 250px;
+            height: 50px;
+            border-radius: 8px;
+            padding-block: 1rem;
+            background-color: rgb(150, 151, 180);
+            &::placeholder {
+                color: white;
+                padding-left: 10px;
+                font-size: 20px;
+            }
+        }
+        button {
+            margin-top: 2rem;
+            background-color: rgb(18, 76, 163);
+            padding-inline: 1.5rem;
+            padding-block: .5rem;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+            border: none;
+            letter-spacing: 4px;
+            transition: background-color .3s ease-in-out;
+            &:hover {
+                background-color: rgb(10, 44, 96);
+            }
+        }
+    }
+}
+
+.update-form {
+    padding: 3rem;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid rgba(49, 50, 71);
+    input, select {
+        width: 200px;
+        height: 30px;
+        border-radius: 8px;
+        border: 1px solid rgba(49, 50, 71);
+        color: rgba(49, 50, 71);
+        &::placeholder {
+            color: rgba(49, 50, 71);
+            padding-left: 10px;
+            font-size: 15px;
+        }
+    }
+
+}
+
+.table-container {
+    padding: 1rem;
+    border: 1px solid rgb(10, 44, 96);
+    border-radius: 8px;
+    margin-inline: 3rem;
+    .table-user {
+        width: 100%;
+        border: 'collapse';
+    }
+    .table-header {
+        color: rgb(10, 44, 96);
+        text-align: left;
+    }
+    .table-row{
+        border-bottom: 1px solid #ddd;
+    }
+    .table-cell {
+        padding: 12px 15px;
+        text-align: left;
+        &.icon {
+            font-size: 20px;
+        }
+    }
+}
+
+.edit-user-button, .update-button {
+    margin-left: 5rem;
+    background-color: rgb(10, 44, 96);
+    color: white;
+    width: fit-content;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-radius: 8px;
+    border:none;
+    &:hover {
+        background-color: rgb(10, 32, 64);
+    }
+}

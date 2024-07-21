@@ -1,13 +1,11 @@
 import * as React from "react"
 import Pages from "../components/Pages/Page"
-import LoginForm from "../components/Connexion/login"
-import Deconnexion from "../components/Connexion/deconnexion";
+import ConfList from "../components/Pages/ConfList.jsx";
 
 const IndexPage = () => {
   return (
     <Pages>
-      <LoginForm/>
-      <Deconnexion/>
+      <ConfList/>
     </Pages>
   )
 }

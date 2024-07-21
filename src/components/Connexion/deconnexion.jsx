@@ -3,13 +3,28 @@ import { navigate } from 'gatsby';
 
 const LogoutButton = () => {
   const handleLogout = () => {
-    localStorage.removeItem('authToken'); // Supprimer le token d'authentification
-    navigate('/login'); // Rediriger vers la page de connexion après déconnexion
+    localStorage.removeItem('authToken');
+    navigate('/');
+    window.location.reload();
   };
 
   return (
-    <button onClick={handleLogout}>Déconnexion</button>
+    <button style={styles.logoutButton} onClick={handleLogout}>
+      Déconnexion
+    </button>
   );
+};
+
+const styles = {
+  logoutButton: {
+    backgroundColor: '#f44336',
+    color: 'white',
+    padding: '10px',
+    borderRadius: '5px',
+    marginTop: '10px',
+    border: 'none',
+    cursor: 'pointer',
+  }
 };
 
 export default LogoutButton;
